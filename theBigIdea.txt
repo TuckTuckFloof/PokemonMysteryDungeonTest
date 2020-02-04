@@ -1,0 +1,42 @@
+Ok, so this was way too much text to put into a // sort of line
+So here it is on this text file
+
+This is a test taken straight from the Pokemon Mystery Dungeon games for the GBA
+and everything in this test is meant to be accurate to the games introductionary questionnaire
+
+It starts with the introduction where the mysterious void tells you where the fuck you are
+
+Then he proceeds to ask you a series of questions so for this next portion, I'm just going to copy/paste
+what I found involving this off of gamefaqs.gamespot.com cause I'm lazy YEEEEEEEEEEEEEEEEEEEEEEEEET
+
+    To determine your starting Pokemon, you will be given a personality test.
+    This will involve a random question from 8 out of 14 Categories, with each
+    Category leaning towards a particular personality type.  Once you have been
+    asked the full eight questions, you will be given a final question that
+    simply asks for your gender.  Once this has been answered, the results are
+    all tallied and your final personality and resulting Pokemon is determined.
+
+    You will be given a Pokemon relating to the personality type you scored
+    highest in.  In the event of a tie between multiple personality types, one
+    will be chosen randomly out of those you scored highest in.  Finally, your
+    choice of gender dictates which of two Pokemon you will get for that
+    personality.
+
+So a couple of things that we need to point out here that this program has to follow:
+
+    1) You are asked questions from 8 of the 14 categories, each category lines up with a nature in the main Pokemon games
+    2) YOU ARE ASKED ONLY 8 QUESTIONS and each questions leads you to the next questions assuming its in the category of nature with the highest increase
+        ex. You answer (a) and it gives you +2 hardy and +1 calm, you'll be sent to the hardy question and not the calm
+    3) You will be given 2 pokemon chosen from the category you scored the highest in. A tie is chosen randomly.
+    4) Gender has the final say out of the 2 that are chosen at the end
+
+With that being said this program needs to do a few things in order to emulate the algorithm:
+
+    1) A random number generator - done
+    2) A struct that holds all the natures, this just makes things easier to organize - done
+    3) A hell of a lot of functions to cover all of the categories - working on it
+    4) A special function that clears the screen because typing in system("clear") and system("pause") every two lines will be a pain in the ass - done
+
+This last bit is a list of things that don't matter/I'll do after the first portion is done
+
+    1) your partner I'll do after because it doesn't really matter that much. I only have to remember the 2 rules
