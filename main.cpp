@@ -51,7 +51,8 @@ void introduction(){
 
 // Chooses a random question 
 void questionChooser() {
-    hitEnter();
+
+    system("clear");
 
     switch (rand() % 14 + 1) {
         case 1:
@@ -83,10 +84,6 @@ void questionChooser() {
         case 14:
             miscQuestions();
     }
-}
-
-void braveQuestions(){
-
 }
 
 void jollyQuestions(){
