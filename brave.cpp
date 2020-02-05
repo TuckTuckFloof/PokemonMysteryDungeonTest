@@ -22,6 +22,7 @@ void braveQuestions() {
 					player.timid += 1;
 					totalQuestionNumChecker();
 					questionChooser();
+
 			}
 		case 2:
 			printf("There is an alien invasion!\n"
@@ -41,14 +42,47 @@ void braveQuestions() {
 							"2) Refuese.\n");
 					switch(player.answer == cin.get()) {
 						case 1:
-
+							player.sassy += 1;
+							player.relaxed += 1;
+							totalQuestionNumChecker();
+							questionChooser();
 						case 2:
-
+							player.brave += 4;
+							totalQuestionNumChecker();
+							questionChooser();
+						
 					}
 			}
 		case 3:
-		
+			printf("There is a scream from behind a door!\n"
+				"How will you react?\n\n"
+				"1) Yank open the door."
+				"2) Scream in unison.");
+			switch (player.answer == cin.get()) {
+				case 1:
+					player.hardy += 1;
+					player.brave += 2;
+					totalQuestionNumChecker();
+					questionChooser();
+				case 2:
+					player.naive += 2;
+					totalQuestionNumChecker();
+					questionChooser();
+
+			}
 		case 4:
-	
+			printf("A delinquent is hassling a girl on a busy city street!\n"
+				"What will you do?\n\n"
+				"1) Help without hesitation.\n"
+				"2) Help, even if scared.\n"
+				"3) Call the police.\n"
+				"4) Do nothing out of fear. \n");
+			switch (player.answer == cin.get()) {
+				case 1:
+					
+				case 2:
+				case 3:
+				case 4:
+			}
 	}
 }

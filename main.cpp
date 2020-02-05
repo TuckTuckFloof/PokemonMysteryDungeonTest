@@ -9,6 +9,8 @@ int main() {
 
 // In the game, you're asked 8-14 questions, this just makes sure that you are asked that value of questions
 void totalQuestionNumChecker(){
+    break;
+
     if (totalQuestions == player.questionNum){
         getAnswer();
     }
@@ -54,7 +56,7 @@ void questionChooser() {
 
     system("clear");
 
-    switch (rand() % 14 + 1) {
+    switch (1) {//rand() % 14 + 1) { <- Replace this later so you don't get only hardy questions dumbass...
         case 1:
             hardyQuestions();
         case 2:
