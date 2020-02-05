@@ -1,5 +1,6 @@
 #include "natures.h"
 
+// Questions based around the Hardy Nature
 void hardyQuestions(){
     switch(questionNum()){
         case 1:
@@ -23,7 +24,7 @@ void hardyQuestions(){
                     questionChooser();
                 default:
                     printf("Please put a valid answer...");
-                    hitEnter();
+                    hardyQuestions();
             }
         case 2:
             printf("Can you focus on something you like?\n\n"
@@ -42,7 +43,7 @@ void hardyQuestions(){
                     questionChooser();
                 default:
                     printf("Please put in a valid answer...");
-                    hitEnter();
+                    hardyQuestions();
             }
         case 3:
             printf("When the going gets tough, do you get going?\n\n"
@@ -61,7 +62,7 @@ void hardyQuestions(){
                     questionChooser();
                 default:
                     printf("Please put in a valid answer...");
-                    hitEnter();
+                    hardyQuestions();
             }
         case 4:
             printf("There is a bucket.\n"
@@ -84,7 +85,7 @@ void hardyQuestions(){
                     questionChooser();
                 default:
                     printf("Please put in a valid answer...");
-                    hitEnter();
+                    hardyQuestions();
             }
     }
 }
