@@ -13,15 +13,12 @@ void hardyQuestions(){
                 case 1:
                     player.hardy += 2;
                     totalQuestionNumChecker();
-                    questionChooser();
                 case 2:
                     player.relaxed += 2;
                     totalQuestionNumChecker();
-                    questionChooser();
                 case 3:
                     player.impish += 2;
                     totalQuestionNumChecker();
-                    questionChooser();
                 default:
                     printf("Please put a valid answer...");
                     hardyQuestions();
@@ -35,15 +32,13 @@ void hardyQuestions(){
                     player.hardy += 2;
                     player.docile += 1;
                     totalQuestionNumChecker();
-                    questionChooser();
                 case 2:
                     player.sassy += 2;
                     player.quirky += 2;
                     totalQuestionNumChecker();
-                    questionChooser();
                 default:
                     printf("Please put in a valid answer...");
-                    hardyQuestions();
+                    hardyQuestion();
             }
         case 3:
             printf("When the going gets tough, do you get going?\n\n"
@@ -54,12 +49,10 @@ void hardyQuestions(){
                     player.hardy += 2;
                     player.brave += 2;
                     totalQuestionNumChecker();
-                    questionChooser();
                 case 2:
                     player.sassy += 2;
                     player.quirky += 2;
                     totalQuestionNumChecker();
-                    questionChooser();
                 default:
                     printf("Please put in a valid answer...");
                     hardyQuestions();
@@ -74,15 +67,12 @@ void hardyQuestions(){
                 case 1:
                     player.hardy += 2;
                     totalQuestionNumChecker();
-                    questionChooser();
-                case 2:
+		case 2:
                     player.calm += 2;
                     totalQuestionNumChecker();
-                    questionChooser();
                 case 3:
                     player.quirky += 2;
                     totalQuestionNumChecker();
-                    questionChooser();
                 default:
                     printf("Please put in a valid answer...");
                     hardyQuestions();

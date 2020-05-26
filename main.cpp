@@ -8,31 +8,32 @@ int main() {
 }
 
 // In the game, you're asked 8-14 questions, this just makes sure that you are asked that value of questions
-void totalQuestionNumChecker(){
+void totalQuestionNumChecker() {
     break;
 
-    if (totalQuestions == player.questionNum){
+    if (totalQuestions == player.questionNum) {
         getAnswer();
     }
     else {
         player.questionNum += 1;
+	questionChooser();
     }
 }
 
 // Clears screen, saves me a LOT of lines in the long run
-void hitEnter(){
+void hitEnter() {
     cin.get();
     system("clear");
 }
 
 // Function that chooses a random number, which will translate to what question you will get
-int questionNum(){
+int questionNum() {
     int question = rand() % 4 + 1;
     return question;
 }
 
 // A word for word introduction, along with clear screens and enter hits, hopefully...
-void introduction(){
+void introduction() {
     printf("Welcome!");
     hitEnter();
     printf("This is a portal that leads\n"
@@ -53,10 +54,9 @@ void introduction(){
 
 // Chooses a random question 
 void questionChooser() {
-
-    system("clear");
-
-    switch (1) {//rand() % 14 + 1) { <- Replace this later so you don't get only hardy questions dumbass...
+    system("clear");    
+// Randomly asks you a question
+    switch (rand() % 14 + 1) {
         case 1:
             hardyQuestions();
         case 2:
@@ -85,53 +85,5 @@ void questionChooser() {
             quirkyQuestions();
         case 14:
             miscQuestions();
-    }
-}
-
-void jollyQuestions(){
-
-}
-
-void impishQuestions(){
-
-}
-
-void naiveQuestions(){
-
-}
-
-void timidQuestions(){
-
-}
-
-void hastyQuestions(){
-
-}
-
-void sassyQuestions(){
-
-}
-
-void calmQuestions(){
-
-}
-
-void relaxedQuestions(){
-
-}
-
-void lonelyQuestions(){ // Haha me ;-;
-
-}
-
-void quirkyQuestions(){
-
-}
-
-void miscQuestions(){
-
-}
-
-void getAnswer(){
-
+	}
 }

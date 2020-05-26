@@ -24,6 +24,7 @@ void quirkyQuestions();
 void miscQuestions();
 void getAnswer();
 
+// This struct stores the values of all of the values and scores points for you to get your Pokemon
 struct playerNature {
     int hardy;
     int docile;
@@ -43,4 +44,5 @@ struct playerNature {
     bool gender;
 };
 
+// Global struct call
 playerNature player;

@@ -16,13 +16,10 @@ void braveQuestions() {
 					player.brave += 3;
 					player.impish += 1;
 					totalQuestionNumChecker();
-					questionChooser();
 				case 2:
 					player.docile += 2;
 					player.timid += 1;
 					totalQuestionNumChecker();
-					questionChooser();
-
 			}
 		case 2:
 			printf("There is an alien invasion!\n"
@@ -45,12 +42,9 @@ void braveQuestions() {
 							player.sassy += 1;
 							player.relaxed += 1;
 							totalQuestionNumChecker();
-							questionChooser();
 						case 2:
 							player.brave += 4;
 							totalQuestionNumChecker();
-							questionChooser();
-						
 					}
 			}
 		case 3:
@@ -63,12 +57,9 @@ void braveQuestions() {
 					player.hardy += 1;
 					player.brave += 2;
 					totalQuestionNumChecker();
-					questionChooser();
 				case 2:
 					player.naive += 2;
 					totalQuestionNumChecker();
-					questionChooser();
-
 			}
 		case 4:
 			printf("A delinquent is hassling a girl on a busy city street!\n"
@@ -79,10 +70,20 @@ void braveQuestions() {
 				"4) Do nothing out of fear. \n");
 			switch (player.answer == cin.get()) {
 				case 1:
-					
+					player.brave += 3;
+					totalQuestionNumChecker();
 				case 2:
+					player.hardy += 2;
+					player.brave += 2;
+					totalQuestionNumChecker();
 				case 3:
+					player.docile += 1;
+					player.timid += 1;
+					player.relaxed += 1;
+					totalQuestionNumChecker();
 				case 4:
+					player.timid += 2;
+					totalQuestionNumChecker();
 			}
 	}
 }

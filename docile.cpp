@@ -13,12 +13,10 @@ void docileQuestions() {
 					player.docile += 2;
 					player.naive += 1;
 					totalQuestionNumChecker();
-					questionChooser();
 				case 2:
 					player.timid += 2;
 					player.calm += 1;
 					totalQuestionNumChecker();
-					questionChooser();
 				default:
 					printf("Please put a valid answer...");
 					docileQuestions();
@@ -34,12 +32,10 @@ void docileQuestions() {
 					player.docile += 2;
 					player.hasty += 1;
 					totalQuestionNumChecker();
-					questionChooser();
 				case 2:
 					player.naive += 2;
 					player.relaxed += 1;
 					totalQuestionNumChecker();
-					questionChooser();
 				default:
 					printf("Please put a valid answer...");
 					docileQuestions();
@@ -54,16 +50,13 @@ void docileQuestions() {
 				case 1:
 					player.docile += 2;
 					totalQuestionNumChecker();
-					questionChooser();
 				case 2:
 					player.naive += 1;
 					player.lonely += 1;
 					totalQuestionNumChecker();
-					questionChooser();
 				case 3:
 					player.sassy += 2;
 					totalQuestionNumChecker();
-					questionChooser();
 				default:
 					printf("Please put a valid answer...");
 					docileQuestions();
@@ -77,18 +70,16 @@ void docileQuestions() {
 				case 1:
 					player.docile += 2;
 					totalQuestionNumChecker();
-					questionChooser();
 				case 2:
 					player.naive += 2;
 					totalQuestionNumChecker();
-					questionChooser();
 				case 3:
 					player.impish += 2;
 					totalQuestionNumChecker();
-					questionChooser();
 				default:
 					printf("Please put a valid answer...");
 					docileQuestions();
 			}
 	}
 }
+
