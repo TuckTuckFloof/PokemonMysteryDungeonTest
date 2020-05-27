@@ -1,8 +1,8 @@
 #include "natures.h"
 
 // Questions based around the Hardy Nature
-void hardyQuestions(){
-    switch(questionNum()){
+void hardyQuestions() {
+    switch(questionNum()) {
         case 1:
             printf("A test is coming up.\n"
                    "How do you study for it?\n\n"
@@ -77,5 +77,8 @@ void hardyQuestions(){
                     printf("Please put in a valid answer...");
                     hardyQuestions();
             }
+    	default:
+	    printf("Please put in a valid answer...");
+	    hardyQuestions();
     }
 }

@@ -28,5 +28,46 @@ void naiveQuestions() {
 				"2) No.\n");
 			switch(player.answer == cin.get()) {
 				case 1:
-					player.
-
+					player.docile += 1;
+					player.naive += 2;
+					totalQuestionNumChecker();
+					break;
+				case 2:
+					player.quirky += 2;
+					totalQuestionNumChecker();
+					break;
+			}
+		case 3:
+			printf("Do others often call you childish?\n\n"
+				"1) Yes.\n"
+				"2) No.\n");
+			switch(player.answer == cin.get()) {
+				case 1:
+					player.jolly += 1;
+					player.naive += 2;
+					totalQuestionNumChecker();
+					break;
+				case 2:
+					player.calm += 2;
+					totalQuestionNumChecker();
+					break;
+			}
+		case 4:
+			printf("Do you like to imagine things for your amusement?\n\n"
+				"1) Yes.\n"
+				"2) No.\n");
+			switch(player.answer == cin.get()) {
+				case 1:
+					player.naive += 2;
+					totalQuestionNumChecker();
+					break;
+				case 2:
+					player.hasty += 2;
+					totalQuestionNumChecker();
+					break;
+			}
+		default:
+			printf("Please enter a valid answer...\n\n");
+			naiveQuestions();
+	}
+}
