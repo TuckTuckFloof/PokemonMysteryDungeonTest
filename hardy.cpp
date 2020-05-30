@@ -78,7 +78,6 @@ void hardyQuestions() {
                     hardyQuestions();
             }
     	default:
-	    printf("Please put in a valid answer...");
 	    hardyQuestions();
     }
 }
